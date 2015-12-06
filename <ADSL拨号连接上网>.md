@@ -25,7 +25,7 @@
 9. 最后，你会被询问是否马上建立连接。
 
 > 在需要的时候启动ADSL连接，可以在终端中输入：   
-```sudo pon dsl-provider```
+```sudo pon dsl-provider```   
 > 断开ADSL连接，可以在终端中输入:  
 ```sudo poff```
 
@@ -37,5 +37,6 @@
 > 找到 [ifupdown] managed=false 修改成： [ifupdown] managed=true
 > 终端运行sudo gedit /etc/network/interfaces 只保留auto lo iface lo inet loopback
 > 删除dns设置 sudo mv /etc/resolv.conf /etc/resolv.conf_backup
-  ``` 我在这里没有这样做，这样做域名解析失败```
+  ``` 我在这里没有这样做，这样做域名解析失败```    
+  
 > 之后重启 network-manager服务： sudo service network-manager restart
