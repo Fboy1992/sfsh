@@ -11,7 +11,7 @@
 </Directory>
 ```
 #### 第二步
-在/etc/apache2/apache2.cnf中加入Included httpd.cnf
+在/etc/apache2/apache2.conf中加入Included httpd.conf
 
 #### 第三步
 在/etc/apache2/目录下，新建文件httpd.conf, 内容是ServerName localhost
