@@ -33,9 +33,9 @@
 
 > 在终端中输入以下命令，来配置网络连接管理文件：
 
-> sudo gedit /etc/NetworkManager/nm-system-settings.conf 打开后
-> 找到 [ifupdown] managed=false 修改成： [ifupdown] managed=true
-> 终端运行sudo gedit /etc/network/interfaces 只保留auto lo iface lo inet loopback
-> 删除dns设置 sudo mv /etc/resolv.conf /etc/resolv.conf_backup
-  * 我在这里没有这样做，这样做域名解析失败  
-> 之后重启 network-manager服务： sudo service network-manager restart
+* sudo gedit /etc/NetworkManager/nm-system-settings.conf 打开后
+* 找到 [ifupdown] managed=false 修改成： [ifupdown] managed=true
+* 终端运行sudo gedit /etc/network/interfaces 只保留auto lo iface lo inet loopback
+* 删除dns设置 sudo mv /etc/resolv.conf /etc/resolv.conf_backup
+ * 我在这里没有这样做，这样做域名解析失败  
+* 之后重启 network-manager服务： sudo service network-manager restart
