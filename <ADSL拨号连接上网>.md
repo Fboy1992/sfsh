@@ -37,5 +37,6 @@
 * 找到 [ifupdown] managed=false 修改成： [ifupdown] managed=true
 * 终端运行sudo gedit /etc/network/interfaces 只保留auto lo iface lo inet loopback
 * 删除dns设置 sudo mv /etc/resolv.conf /etc/resolv.conf_backup
- * 我在这里没有这样做，这样做域名解析失败  
+ * 我在这里没有这样做，这样做域名解析失败
+ * 我在安装sublime_text_2时，找不到dns,于是又删除了resolv.conf
 * 之后重启 network-manager服务： sudo service network-manager restart
