@@ -20,6 +20,6 @@
 * sudo apt-get install phpmyadmin
 * 在安装过程中会要求选择Web server：apache2或lighttpd，使用空格键选定apache2。
 * 输入设置的Mysql数据库连接密码
-* 建立软连接ln -s /usr/share/phpmyadmin /var/www
+* 建立软连接ln -s /usr/share/phpmyadmin /var/www/html  #这个是根据服务器的文档目录决定的
 * 浏览器输入localhost/phpmyadim 进行测试
 
